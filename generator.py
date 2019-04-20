@@ -46,7 +46,7 @@ print("Image height in RAM pages is "+str(int(height_in_pages))+".")
 if (height_in_pages == int(height_in_pages)) and (height <= 32):	# check whether the image has proper dimensions
 	height_in_pages = int(height_in_pages)
 	print("Processing image...")
-	result = process_image(width, height, height_in_pages);
+	result = process_image(width, height, height_in_pages)
 	try:
 		write_to_file(result)
 		print("Hexadecimal values have successfully been written to "+output_file+"!")
